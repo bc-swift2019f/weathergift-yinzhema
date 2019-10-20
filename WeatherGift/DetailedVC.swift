@@ -11,7 +11,7 @@ import UIKit
 class DetailedVC: UIViewController {
 
     var currentPage=0
-    var locationsArray=[String]()
+    var locationsArray=[WeatherLocation]()
     
     @IBOutlet weak var dateLabel: UILabel!
     @IBOutlet weak var locationLabel: UILabel!
@@ -21,7 +21,7 @@ class DetailedVC: UIViewController {
     
     override func viewDidLoad() {
         super.viewDidLoad()
-        locationLabel.text=locationsArray[currentPage]
+        locationLabel.text=locationsArray[currentPage].name
         // Do any additional setup after loading the view.
     }
 }
