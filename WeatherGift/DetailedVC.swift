@@ -45,6 +45,7 @@ class DetailedVC: UIViewController {
         locationLabel.text=locationsArray[currentPage].name
         dateLabel.text=locationsArray[currentPage].coordinates
         tempLabel.text=locationsArray[currentPage].currentTemperature
+        summaryLabel.text=locationsArray[currentPage].currentSummary
     }
 }
 

@@ -28,6 +28,11 @@ class WeatherLocation {
                 } else{
                     print("Could not return a temperature")
                 }
+                if let summary = json["daily"]["summary"].string{
+                    self.currentSummary=summary
+                } else{
+                    print("Could not return a summary")
+                }
             case .failure(let error):
                 print(error)
             }
