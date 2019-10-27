@@ -28,11 +28,14 @@ class DetailedVC: UIViewController {
     @IBOutlet weak var summaryLabel: UILabel!
     @IBOutlet weak var currentImage: UIImageView!
     @IBOutlet weak var tableView: UITableView!
+    @IBOutlet weak var collectionView: UICollectionView!
     
     override func viewDidLoad() {
         super.viewDidLoad()
         tableView.delegate=self
         tableView.dataSource=self
+        collectionView.delegate=self
+        collectionView.dataSource=self
         if currentPage != 0 {
             self.locationsArray[currentPage].getWeather{
                 self.updateUserInterface()
@@ -136,6 +139,19 @@ extension DetailedVC: UITableViewDataSource, UITableViewDelegate{
     
     func tableView(_ tableView: UITableView, heightForRowAt indexPath: IndexPath) -> CGFloat {
         return 80
+    }
+    
+    
+}
+
+extension DetailedVC: UICollectionViewDataSource, UICollectionViewDelegate{
+    func collectionView(_ collectionView: UICollectionView, numberOfItemsInSection section: Int) -> Int {
+        return 24
+    }
+    
+    func collectionView(_ collectionView: UICollectionView, cellForItemAt indexPath: IndexPath) -> UICollectionViewCell {
+        let hourlyCell=collectionView.dequeueReusableCell(withReuseIdentifier: "HourlyCell", for: indexPath)
+        return hourlyCell
     }
     
     
