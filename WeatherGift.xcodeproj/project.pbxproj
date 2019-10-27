@@ -21,6 +21,7 @@
 		DA54A0D82352C5B1006B04EA /* ListVC.swift in Sources */ = {isa = PBXBuildFile; fileRef = DA54A0D72352C5B1006B04EA /* ListVC.swift */; };
 		DA54A0DA2352C880006B04EA /* PageVC.swift in Sources */ = {isa = PBXBuildFile; fileRef = DA54A0D92352C880006B04EA /* PageVC.swift */; };
 		DAC6F60623660D6A000B2A99 /* DayWeatherCell.swift in Sources */ = {isa = PBXBuildFile; fileRef = DAC6F60523660D6A000B2A99 /* DayWeatherCell.swift */; };
+		DAC6F60823662B3A000B2A99 /* TimeInterval+format.swift in Sources */ = {isa = PBXBuildFile; fileRef = DAC6F60723662B3A000B2A99 /* TimeInterval+format.swift */; };
 		E67D9AB4DB0437DC368404AC /* Pods_WeatherGiftTests.framework in Frameworks */ = {isa = PBXBuildFile; fileRef = 175A60E5BB29F24B12464CE4 /* Pods_WeatherGiftTests.framework */; };
 /* End PBXBuildFile section */
 
@@ -68,6 +69,7 @@
 		DA54A0D72352C5B1006B04EA /* ListVC.swift */ = {isa = PBXFileReference; lastKnownFileType = sourcecode.swift; path = ListVC.swift; sourceTree = "<group>"; };
 		DA54A0D92352C880006B04EA /* PageVC.swift */ = {isa = PBXFileReference; lastKnownFileType = sourcecode.swift; path = PageVC.swift; sourceTree = "<group>"; };
 		DAC6F60523660D6A000B2A99 /* DayWeatherCell.swift */ = {isa = PBXFileReference; lastKnownFileType = sourcecode.swift; path = DayWeatherCell.swift; sourceTree = "<group>"; };
+		DAC6F60723662B3A000B2A99 /* TimeInterval+format.swift */ = {isa = PBXFileReference; lastKnownFileType = sourcecode.swift; path = "TimeInterval+format.swift"; sourceTree = "<group>"; };
 		F9736B628DA0228D73FBB903 /* Pods-WeatherGift-WeatherGiftUITests.release.xcconfig */ = {isa = PBXFileReference; includeInIndex = 1; lastKnownFileType = text.xcconfig; name = "Pods-WeatherGift-WeatherGiftUITests.release.xcconfig"; path = "Target Support Files/Pods-WeatherGift-WeatherGiftUITests/Pods-WeatherGift-WeatherGiftUITests.release.xcconfig"; sourceTree = "<group>"; };
 /* End PBXFileReference section */
 
@@ -140,6 +142,7 @@
 				DA54A0D92352C880006B04EA /* PageVC.swift */,
 				DA54A0D52352C0A1006B04EA /* DetailedVC.swift */,
 				DAC6F60523660D6A000B2A99 /* DayWeatherCell.swift */,
+				DAC6F60723662B3A000B2A99 /* TimeInterval+format.swift */,
 				DA54A0D72352C5B1006B04EA /* ListVC.swift */,
 				DA54A0AB2352BE60006B04EA /* Main.storyboard */,
 				DA54A0AE2352BE61006B04EA /* Assets.xcassets */,
@@ -459,6 +462,7 @@
 				DA43126A235D0F3700A7D507 /* WeatherLocation.swift in Sources */,
 				DA54A0D82352C5B1006B04EA /* ListVC.swift in Sources */,
 				DA54A0DA2352C880006B04EA /* PageVC.swift in Sources */,
+				DAC6F60823662B3A000B2A99 /* TimeInterval+format.swift in Sources */,
 				DA54A0D62352C0A1006B04EA /* DetailedVC.swift in Sources */,
 				DA54A0A82352BE60006B04EA /* AppDelegate.swift in Sources */,
 				DA43126C235D380A00A7D507 /* Constants.swift in Sources */,
